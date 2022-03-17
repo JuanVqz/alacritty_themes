@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "alacritty_themes/version"
 
 module AlacrittyThemes

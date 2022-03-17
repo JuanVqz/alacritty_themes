@@ -1,13 +1,20 @@
 PATH
   remote: .
   specs:
-    alacritty_themes (0.1.0)
+    alacritty_themes (0.1.1)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    ast (2.4.2)
     diff-lcs (1.5.0)
+    parallel (1.21.0)
+    parser (3.1.1.0)
+      ast (~> 2.4.1)
+    rainbow (3.1.1)
     rake (12.3.3)
+    regexp_parser (2.2.1)
+    rexml (3.2.5)
     rspec (3.11.0)
       rspec-core (~> 3.11.0)
       rspec-expectations (~> 3.11.0)
@@ -21,6 +28,19 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.11.0)
     rspec-support (3.11.0)
+    rubocop (1.26.0)
+      parallel (~> 1.10)
+      parser (>= 3.1.0.0)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml
+      rubocop-ast (>= 1.16.0, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 3.0)
+    rubocop-ast (1.16.0)
+      parser (>= 3.1.1.0)
+    ruby-progressbar (1.11.0)
+    unicode-display_width (2.1.0)
 
 PLATFORMS
   ruby
@@ -29,6 +49,7 @@ DEPENDENCIES
   alacritty_themes!
   rake (~> 12.0)
   rspec (~> 3.0)
+  rubocop (~> 1.7)
 
 BUNDLED WITH
    2.1.4
