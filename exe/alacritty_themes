@@ -2,3 +2,5 @@
 # frozen_string_literal: true
 
 require "alacritty_themes"
+
+AlacrittyThemes::CLI.new.start(ARGV)
