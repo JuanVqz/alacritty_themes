@@ -6,14 +6,14 @@ Gem::Specification.new do |spec|
   spec.name          = "alacritty_themes"
   spec.version       = AlacrittyThemes::VERSION
   spec.authors       = ["Juan Vasquez"]
-  spec.email         = ["isc.juanvasquez@gmail.com"]
+  spec.email         = ["me@juanvasquez.dev"]
 
   spec.summary       = "A collection of themes for alacritty"
   spec.description   = <<~DESC
     Your favorite collection of themes for alacritty,
     we initialize with a few themes and you can add more.
   DESC
-  spec.homepage      = "https://github.com/juanvasquez/alacritty_themes"
+  spec.homepage      = "https://github.com/juanvqz/alacritty_themes"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.7.5")
 
