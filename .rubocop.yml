@@ -1,6 +1,9 @@
+require:
+  - rubocop-rspec
+  - rubocop-rake
+
 AllCops:
   NewCops: enable
-  SuggestExtensions: false
   TargetRubyVersion: 2.7.5
 
 Style/StringLiterals:
@@ -11,3 +14,6 @@ Style/StringLiteralsInInterpolation:
   Enabled: true
   EnforcedStyle: double_quotes
 
+RSpec/DescribedClass:
+  Enabled: true
+  EnforcedStyle: explicit
