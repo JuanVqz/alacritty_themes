@@ -6,6 +6,7 @@ require_relative "alacritty_themes/parser"
 module AlacrittyThemes
   class Error < StandardError; end
 
+  # CLI entry point
   class CLI
     def start(argv)
       options = parse_options(argv)
