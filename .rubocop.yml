@@ -17,3 +17,6 @@ Style/StringLiteralsInInterpolation:
 RSpec/DescribedClass:
   Enabled: true
   EnforcedStyle: explicit
+
+Metrics/BlockLength:
+  Enabled: false

@@ -28,7 +28,7 @@ module AlacrittyThemes
       def add_create_option(options)
         parser.on("-c", "--create", "Creates file") do
           options[:command] = :create
-          options[:message] = "Creating Alacritty file"
+          options[:message] = "alacritty.yml was created"
         end
       end
 
