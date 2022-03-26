@@ -1,14 +1,15 @@
 # frozen_string_literal: true
 
-require "fileutils"
 require "alacritty_themes/version"
 require_relative "alacritty_themes/parser"
+require_relative "alacritty_themes/file_helper"
 
 module AlacrittyThemes
   class Error < StandardError; end
 
-  # CLI entry point
-  class CLI
+  class CLI # :nodoc:
+    include FileHelper
+
     def start(argv)
       options = parse_options(argv)
       execute_command(options)
@@ -22,11 +23,9 @@ module AlacrittyThemes
 
     def execute_command(options)
       if options[:command] == :create
-        file_path = File.join(Dir.home, ".config/alacritty/alacritty.yml")
-        directory_path = File.dirname(file_path)
-
-        FileUtils.mkdir_p(directory_path) unless File.directory?(directory_path)
-        FileUtils.touch(file_path)
+        create_directory_path unless does_path_exist?
+        create_backup_file if does_file_exist?
+        create_file
       end
       puts options[:message]
     end

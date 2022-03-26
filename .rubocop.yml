@@ -14,9 +14,17 @@ Style/StringLiteralsInInterpolation:
   Enabled: true
   EnforcedStyle: double_quotes
 
+Metrics/BlockLength:
+  Enabled: false
+
 RSpec/DescribedClass:
   Enabled: true
   EnforcedStyle: explicit
 
-Metrics/BlockLength:
-  Enabled: false
+RSpec/MultipleExpectations:
+  Enabled: true
+  Max: 2
+
+RSpec/NestedGroups:
+  Enabled: true
+  Max: 4
