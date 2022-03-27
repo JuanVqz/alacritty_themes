@@ -34,5 +34,5 @@ Gem::Specification.new do |spec|
   spec.metadata      = { "rubygems_mfa_required" => "true" }
 
   spec.add_development_dependency "fakefs", "~> 1.4.1"
-  spec.add_development_dependency "pry", "~> 0.13.1"
+  spec.add_development_dependency "pry", "~> 0.14.1"
 end
