@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe AlacrittyThemes::Parser do # rubocop:disable Metrics/BlockLength
+RSpec.describe AlacrittyThemes::Parser do
   context "without input" do
     it "returns an instance of OptionParser" do
       input = []
@@ -25,7 +25,7 @@ RSpec.describe AlacrittyThemes::Parser do # rubocop:disable Metrics/BlockLength
 
       options = AlacrittyThemes::Parser.from(input)
 
-      expect(options[:message]).to eq "Creating Alacritty file"
+      expect(options[:message]).to eq "alacritty.yml was created"
     end
   end
 

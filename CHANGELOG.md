@@ -1,5 +1,18 @@
 ## [Unreleased]
 
+## [0.1.4] - 2022-03-21
+
+### Added
+
+- Add dependabot config
+- Add FakeFs gem
+- Add ruby compatibility with `ruby-head`
+
+### Changed
+
+- Creates the alacritty.yml file if doesn't exist
+- Move the alacritty.yml to a backup if the alacritty.yml already exists
+
 ## [0.1.3] - 2022-03-21
 
 ### Changed
