@@ -33,6 +33,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   spec.metadata      = { "rubygems_mfa_required" => "true" }
 
-  spec.add_development_dependency "fakefs", "~> 1.4.1"
+  spec.add_development_dependency "fakefs", "~> 1.5.0"
   spec.add_development_dependency "pry", "~> 0.14.1"
 end
